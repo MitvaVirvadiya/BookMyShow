@@ -13,5 +13,10 @@ namespace BookMyShow
         {
 
         }
+        protected void loginBtn_Click(object sender, EventArgs e)
+        {
+            Response.Write(usernameTxt.Text);
+            Response.Write(passwordTxt.Text);
+        }
     }
 }

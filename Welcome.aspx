@@ -6,7 +6,7 @@ Inherits="BookMyShow.Welcome" %>
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head runat="server">
     <title>Welcome to Book My Show</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="Style/style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
