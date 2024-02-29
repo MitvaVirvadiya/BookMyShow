@@ -5,14 +5,11 @@
 }
 
 body {
-  font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: Arial, sans-serif;
 }
 
 .container {
   width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
 }
 
 .nav {
@@ -25,7 +22,7 @@ body {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
-  z-index: 1000; /* Ensure navigation stays above other elements */
+  z-index: 1000; 
 }
 
 .nav.sticky {

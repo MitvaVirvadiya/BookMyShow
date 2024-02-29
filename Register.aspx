@@ -32,24 +32,14 @@
                 </div>
                 <div class="form-group">
                     <asp:Label ID="profileLB" runat="server" class="label" Text="Profile:"></asp:Label>
-                    <!-- Assuming "profile" is a dropdown -->
-                    <asp:DropDownList ID="profileDDL" runat="server" class="input"></asp:DropDownList>
+                    
+                    <asp:FileUpload ID="FileUpload1" runat="server" />
+                    
                 </div>
-                <div class="form-group">
-                    <asp:Label ID="genderLB" runat="server" class="label" Text="Gender:"></asp:Label>
-                    <!-- Assuming "gender" is a radio button list -->
-                    <asp:RadioButtonList ID="genderRBL" runat="server" class="input" RepeatDirection="Horizontal">
-                        <asp:ListItem Text="Male" Value="Male"></asp:ListItem>
-                        <asp:ListItem Text="Female" Value="Female"></asp:ListItem>
-                    </asp:RadioButtonList>
-                </div>
-                <div class="form-group">
-                    <asp:Label ID="ageLB" runat="server" class="label" Text="Age:"></asp:Label>
-                    <asp:TextBox ID="ageTxt" class="input" runat="server"></asp:TextBox>
-                </div>
+                
+                
                 <div class="form-group">
                     <asp:Label ID="locationLB" runat="server" class="label" Text="Location:"></asp:Label>
-                    <!-- Assuming "location" is a dropdown -->
                     <asp:DropDownList ID="locationDDL" runat="server" class="input"></asp:DropDownList>
                 </div>
                 <asp:Button ID="registerBtn" runat="server" Text="Register" class="button" OnClick="registerBtn_Click" />

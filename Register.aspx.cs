@@ -19,9 +19,7 @@ namespace BookMyShow
             Response.Write(usernameTxt.Text);
             Response.Write(emailTxt.Text);
             Response.Write(passwordTxt.Text);
-            Response.Write(profileDDL.Text);
-            Response.Write(ageTxt.Text);
-            Response.Write(genderRBL.Text);
+            
             Response.Write(locationDDL.Text);
         }
     }

@@ -1,4 +1,8 @@
-﻿.admin-login {
+﻿body {
+    font-family: Arial, sans-serif;
+}
+
+.admin-login {
     width: 100%;
     min-height: 100vh;
     padding: 50px 0;
