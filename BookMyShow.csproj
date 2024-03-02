@@ -104,6 +104,10 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="AdminPanel.aspx" />
+    <Content Include="App_Data\bookmyshow.mdf" />
+    <Content Include="App_Data\bookmyshow_log.ldf">
+      <DependentUpon>bookmyshow.mdf</DependentUpon>
+    </Content>
     <Content Include="assets\images\logo1.png" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
@@ -125,6 +129,10 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Login.aspx" />
+    <Content Include="ManageMovies.aspx" />
+    <Content Include="ManageShows.aspx" />
+    <Content Include="ManageTheatre.aspx" />
+    <Content Include="ManageUsers.aspx" />
     <Content Include="Register.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -218,6 +226,34 @@
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ManageMovies.aspx.cs">
+      <DependentUpon>ManageMovies.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManageMovies.aspx.designer.cs">
+      <DependentUpon>ManageMovies.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManageShows.aspx.cs">
+      <DependentUpon>ManageShows.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManageShows.aspx.designer.cs">
+      <DependentUpon>ManageShows.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManageTheatre.aspx.cs">
+      <DependentUpon>ManageTheatre.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManageTheatre.aspx.designer.cs">
+      <DependentUpon>ManageTheatre.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ManageUsers.aspx.cs">
+      <DependentUpon>ManageUsers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManageUsers.aspx.designer.cs">
+      <DependentUpon>ManageUsers.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Register.aspx.cs">
       <DependentUpon>Register.aspx</DependentUpon>
@@ -255,9 +291,7 @@
       <DependentUpon>Welcome.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />

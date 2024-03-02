@@ -5,17 +5,17 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Admin Panel</title>
-    <link rel="stylesheet" href="Style/admin.css">
+    <link rel="stylesheet" href="Style/admin.css"/>
 </head>
 <body>
     <div class="container">
         <div class="sidebar">
           <div class="menu">
-            <div class="menu-option"><a href="#">Users</a></div>
-            <div class="menu-option"><a href="#">Manage Theatre</a></div>
-            <div class="menu-option"><a href="#">Manage Movies</a></div>
-            <div class="menu-option"><a href="#">Manage Shows</a></div>
-            <div class="menu-option"><a href="#" class="settings">Settings</a></div>
+            <div class="menu-option"><a href="ManageUsers.aspx">Users</a></div>
+            <div class="menu-option"><a href="ManageTheatre.aspx">Manage Theatre</a></div>
+            <div class="menu-option"><a href="ManageMovies.aspx">Manage Movies</a></div>
+            <div class="menu-option"><a href="ManageShows.aspx">Manage Shows</a></div>
+            <div class="menu-option target"><a href="AdminPanel.aspx" class="settings">Admin 📱</a></div>
           </div>
         </div>
         <div class="main-content">
