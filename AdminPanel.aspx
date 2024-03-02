@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="Style/admin.css"/>
 </head>
 <body>
+        <form id="form1" runat="server">
+
     <div class="container">
         <div class="sidebar">
           <div class="menu">
@@ -21,13 +23,18 @@
         <div class="main-content">
           <div class="welcome">
             <h2>Welcome, Admin!</h2>
+            <p><asp:Label ID="emailTxt" runat="server" Text=""></asp:Label></p>
             <p>Here you can manage all aspects of BookMyShow.</p>
           </div>
           <div class="info">
             <h3>About BookMyShow</h3>
             <p>BookMyShow is India's leading entertainment destination. With millions of users, we strive to provide the best movie and event booking experience.</p>
           </div>
+            <div class="btns">
+                <asp:Button ID="logoutBtn" runat="server" Text="Logout" class="button" OnClick="logoutBtn_Click" />
+            </div>
         </div>
       </div>
+            </form>
 </body>
 </html>

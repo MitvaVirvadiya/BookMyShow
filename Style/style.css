@@ -217,6 +217,11 @@ body {
   text-align: left;
 }
 
+#msgLB {
+    font-size: 8px;
+    color: red;
+}
+
 .admin-login .form-group {
   margin-bottom: 20px;
 }

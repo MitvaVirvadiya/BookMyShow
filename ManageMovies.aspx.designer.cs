@@ -123,22 +123,49 @@ namespace BookMyShow
         protected global::System.Web.UI.WebControls.Label genreLB;
 
         /// <summary>
-        /// actionCB control.
+        /// actionRB control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox actionCB;
+        protected global::System.Web.UI.WebControls.RadioButton actionRB;
 
         /// <summary>
-        /// comedyCB control.
+        /// comedyRB control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox comedyCB;
+        protected global::System.Web.UI.WebControls.RadioButton comedyRB;
+
+        /// <summary>
+        /// dramaRB control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButton dramaRB;
+
+        /// <summary>
+        /// horrorRB control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButton horrorRB;
+
+        /// <summary>
+        /// historyRB control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButton historyRB;
 
         /// <summary>
         /// languageLB control.
@@ -150,22 +177,31 @@ namespace BookMyShow
         protected global::System.Web.UI.WebControls.Label languageLB;
 
         /// <summary>
-        /// englishCB control.
+        /// englishRB control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox englishCB;
+        protected global::System.Web.UI.WebControls.RadioButton englishRB;
 
         /// <summary>
-        /// hindiCB control.
+        /// hindiRB control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox hindiCB;
+        protected global::System.Web.UI.WebControls.RadioButton hindiRB;
+
+        /// <summary>
+        /// gujaratiRB control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButton gujaratiRB;
 
         /// <summary>
         /// ratingLB control.

@@ -44,22 +44,27 @@
         </div>
 
         <div class="form-group">
-          <asp:Label ID="genreLB" runat="server" class="label" Text="Genre:"></asp:Label>
-          <div class="checkbox-group space-grp">
-            <asp:CheckBox ID="actionCB" runat="server" Text="Action" class="space"/>
-            <asp:CheckBox ID="comedyCB" runat="server" Text="Comedy" class="space" />
-            <!-- Add more genre checkboxes as needed -->
-          </div>
+            <asp:Label ID="genreLB" runat="server" class="label" Text="Genre:"></asp:Label>
+            <div class="radio-group space-grp">
+                <asp:RadioButton ID="actionRB" runat="server" Text="Action" GroupName="genreGroup" class="space" />
+                <asp:RadioButton ID="comedyRB" runat="server" Text="Comedy" GroupName="genreGroup" class="space" />
+                <asp:RadioButton ID="dramaRB" runat="server" Text="Drama" GroupName="genreGroup" class="space" />
+                <asp:RadioButton ID="horrorRB" runat="server" Text="Horror" GroupName="genreGroup" class="space" />
+                <asp:RadioButton ID="historyRB" runat="server" Text="History" GroupName="genreGroup" class="space" />
+                <!-- Add more genre radio buttons as needed -->
+            </div>
         </div>
 
         <div class="form-group">
-          <asp:Label ID="languageLB" runat="server" class="label" Text="Language:"></asp:Label>
-          <div class="checkbox-group space-grp">
-            <asp:CheckBox ID="englishCB" runat="server" Text="English" class="space" />
-            <asp:CheckBox ID="hindiCB" runat="server" Text="Hindi" class="space" />
-            <!-- Add more language checkboxes as needed -->
-          </div>
+            <asp:Label ID="languageLB" runat="server" class="label" Text="Language:"></asp:Label>
+            <div class="radio-group space-grp">
+                <asp:RadioButton ID="englishRB" runat="server" Text="English" GroupName="languageGroup" class="space" />
+                <asp:RadioButton ID="hindiRB" runat="server" Text="Hindi" GroupName="languageGroup" class="space" />
+                <asp:RadioButton ID="gujaratiRB" runat="server" Text="Gujarati" GroupName="languageGroup" class="space" />
+                <!-- Add more language radio buttons as needed -->
+            </div>
         </div>
+
 
         <div class="form-group">
           <asp:Label ID="ratingLB" runat="server" class="label" Text="Rating (1-5):"></asp:Label>

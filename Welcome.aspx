@@ -13,6 +13,11 @@ Inherits="BookMyShow.Welcome" %>
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+      <style>
+          .error{
+              color: red;
+          }
+      </style>
   </head>
   <body>
     <form id="form1" runat="server">
@@ -97,14 +102,10 @@ Inherits="BookMyShow.Welcome" %>
                 runat="server"
                 TextMode="Password"
               ></asp:TextBox>
+                <asp:Label ID="msgLB" runat="server" Text="" CssClass="error"></asp:Label>
             </div>
-            <asp:Button
-              ID="adminLogBtn"
-              runat="server"
-              Text="Login"
-              class="button"
-              OnClick="adminLogBtn_Click"
-            />
+            <asp:Button ID="adminLogBtn" runat="server" Text="Login" class="button" OnClick="adminLogBtn_Click" />
+
           </div>
         </div>
       </div>

@@ -11,7 +11,14 @@ namespace BookMyShow
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["email"] != null)
+            {
+                String email = Session["email"].ToString();
+            }
+            else
+            {
+                Response.Redirect("~/Welcome.aspx");
+            }
         }
     }
 }

@@ -32,7 +32,7 @@
         </div>
         <div class="form-group">
           <asp:Label ID="showTimeLB" runat="server" class="label" Text="Show Time:"></asp:Label>
-          <asp:TextBox ID="showTimeTxt" class="input" runat="server" TextMode="DateTime"></asp:TextBox>
+          <asp:TextBox ID="showTimeTxt" class="input" runat="server" TextMode="Date"></asp:TextBox>
         </div>
         <div class="form-group">
           <asp:Label ID="availableSeatsLB" runat="server" class="label" Text="Available Seats:"></asp:Label>
