@@ -24,22 +24,31 @@ namespace BookMyShow
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
+        /// movieLB control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label movieLB;
+
+        /// <summary>
         /// movieDDL control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label movieDDL;
+        protected global::System.Web.UI.WebControls.DropDownList movieDDL;
 
         /// <summary>
-        /// movieDropDown control.
+        /// theatreLB control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList movieDropDown;
+        protected global::System.Web.UI.WebControls.Label theatreLB;
 
         /// <summary>
         /// theatreDDL control.
@@ -48,16 +57,7 @@ namespace BookMyShow
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label theatreDDL;
-
-        /// <summary>
-        /// theatreDropDown control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList theatreDropDown;
+        protected global::System.Web.UI.WebControls.DropDownList theatreDDL;
 
         /// <summary>
         /// showTimeLB control.
@@ -78,22 +78,40 @@ namespace BookMyShow
         protected global::System.Web.UI.WebControls.TextBox showTimeTxt;
 
         /// <summary>
-        /// availableSeatsLB control.
+        /// priceLB control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label availableSeatsLB;
+        protected global::System.Web.UI.WebControls.Label priceLB;
 
         /// <summary>
-        /// availableSeatsTxt control.
+        /// priceTxt control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox availableSeatsTxt;
+        protected global::System.Web.UI.WebControls.TextBox priceTxt;
+
+        /// <summary>
+        /// successLB control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label successLB;
+
+        /// <summary>
+        /// errorLB control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label errorLB;
 
         /// <summary>
         /// submitBtn control.

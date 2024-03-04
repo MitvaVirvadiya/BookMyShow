@@ -18,17 +18,19 @@ namespace BookMyShow
         public static int id;
         protected void Page_Load(object sender, EventArgs e)
         {
-            fnBindGrid();
-
-            //if (Session["email"] != null)
-            //{
-            //    String email = Session["email"].ToString();
-            //    fnConnection();
-            //}
-            //else
-            //{
-            //    Response.Redirect("~/Welcome.aspx");
-            //}
+            if (!Page.IsPostBack)
+            {
+                if (Session["email"] != null)
+                {
+                    String email = Session["email"].ToString();
+                    fnConnection();
+                    fnBindGrid();
+                }
+                else
+                {
+                    Response.Redirect("~/Welcome.aspx");
+                }
+            }
         }
 
         protected void fnConnection()
@@ -210,21 +212,9 @@ namespace BookMyShow
             descriptionTxt.Text = string.Empty;
             releaseDateTxt.Text = string.Empty;
             durationTxt.Text = string.Empty;
-            foreach (ListItem item in genreRadioList.Items)
-            {
-                item.Selected = false;
-            }
-
-            foreach (ListItem item in languageRadioList.Items)
-            {
-                item.Selected = false;
-            }
-
-            foreach (ListItem item in ratingRadioList.Items)
-            {
-                item.Selected = false;
-            }
-
+            genreRadioList.ClearSelection();
+            languageRadioList.ClearSelection();
+            ratingRadioList.ClearSelection();
         }
     }
 }
