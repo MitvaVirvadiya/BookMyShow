@@ -123,49 +123,13 @@ namespace BookMyShow
         protected global::System.Web.UI.WebControls.Label genreLB;
 
         /// <summary>
-        /// actionRB control.
+        /// genreRadioList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton actionRB;
-
-        /// <summary>
-        /// comedyRB control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton comedyRB;
-
-        /// <summary>
-        /// dramaRB control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton dramaRB;
-
-        /// <summary>
-        /// horrorRB control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton horrorRB;
-
-        /// <summary>
-        /// historyRB control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton historyRB;
+        protected global::System.Web.UI.WebControls.RadioButtonList genreRadioList;
 
         /// <summary>
         /// languageLB control.
@@ -177,31 +141,13 @@ namespace BookMyShow
         protected global::System.Web.UI.WebControls.Label languageLB;
 
         /// <summary>
-        /// englishRB control.
+        /// languageRadioList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton englishRB;
-
-        /// <summary>
-        /// hindiRB control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton hindiRB;
-
-        /// <summary>
-        /// gujaratiRB control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton gujaratiRB;
+        protected global::System.Web.UI.WebControls.RadioButtonList languageRadioList;
 
         /// <summary>
         /// ratingLB control.
@@ -213,49 +159,31 @@ namespace BookMyShow
         protected global::System.Web.UI.WebControls.Label ratingLB;
 
         /// <summary>
-        /// rating1RB control.
+        /// ratingRadioList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton rating1RB;
+        protected global::System.Web.UI.WebControls.RadioButtonList ratingRadioList;
 
         /// <summary>
-        /// rating2RB control.
+        /// successLB control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton rating2RB;
+        protected global::System.Web.UI.WebControls.Label successLB;
 
         /// <summary>
-        /// rating3RB control.
+        /// errorLB control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton rating3RB;
-
-        /// <summary>
-        /// rating4RB control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton rating4RB;
-
-        /// <summary>
-        /// rating5RB control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton rating5RB;
+        protected global::System.Web.UI.WebControls.Label errorLB;
 
         /// <summary>
         /// submitBtn control.
