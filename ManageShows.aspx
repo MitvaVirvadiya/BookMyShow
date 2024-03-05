@@ -45,18 +45,22 @@
         <div class="form-group">
           <asp:Label ID="movieLB" runat="server" class="label" Text="Movie:"></asp:Label>
           <asp:DropDownList ID="movieDDL" runat="server" class="input"></asp:DropDownList>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="movieDDL" CssClass="error" ErrorMessage="Movie is required"></asp:RequiredFieldValidator>
         </div>
         <div class="form-group">
           <asp:Label ID="theatreLB" runat="server" class="label" Text="Theatre:"></asp:Label>
           <asp:DropDownList ID="theatreDDL" runat="server" class="input"></asp:DropDownList>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="theatreDDL" CssClass="error" ErrorMessage="Theatre is required"></asp:RequiredFieldValidator>
         </div>
         <div class="form-group">
           <asp:Label ID="showTimeLB" runat="server" class="label" Text="Show Time:"></asp:Label>
           <asp:TextBox ID="showTimeTxt" class="input" runat="server" TextMode="Date"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="showTimeTxt" CssClass="error" ErrorMessage="Show time is required"></asp:RequiredFieldValidator>
         </div>
         <div class="form-group">
           <asp:Label ID="priceLB" runat="server" class="label" Text="Price:"></asp:Label>
           <asp:TextBox ID="priceTxt" class="input" runat="server" TextMode="Number"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="priceTxt" CssClass="error" ErrorMessage="Price is required"></asp:RequiredFieldValidator>
         </div>
           <asp:Label ID="successLB" runat="server" Text="" CssClass="success"></asp:Label>
           <asp:Label ID="errorLB" runat="server" Text="" CssClass="error"></asp:Label>
