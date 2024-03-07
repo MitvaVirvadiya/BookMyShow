@@ -55,6 +55,7 @@ namespace BookMyShow
 
         protected void submitBtn_Click(object sender, EventArgs e)
         {
+            // hello 123
             String image = "~/assets/" + imageUpload.FileName;
             try
             {

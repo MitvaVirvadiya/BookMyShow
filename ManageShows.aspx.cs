@@ -23,16 +23,16 @@ namespace BookMyShow
             {
                 fnBindMovie();
                 fnBindTheatre();
-                //if (Session["email"] != null)
-                //{
-                //    String email = Session["email"].ToString();
-                //    fnConnection();
-                fnBindGrid();
-                //}
-                //else
-                //{
-                //    Response.Redirect("~/Welcome.aspx");
-                //}
+                if (Session["email"] != null)
+                {
+                    String email = Session["email"].ToString();
+                    fnConnection();
+                    fnBindGrid();
+                }
+                else
+                {
+                    Response.Redirect("~/Welcome.aspx");
+                }
             }
         }
 
