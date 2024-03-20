@@ -61,7 +61,7 @@ namespace BookMyShow
                 cmd.Parameters.AddWithValue("passwordTxt", totalSeatsTxt.Text);
                 //cmd.Parameters.AddWithValue("image", totalSeatsTxt.Text);
                 cmd.Parameters.AddWithValue("Location", locationDDL.selected);
-
+                // hello vandan
 
 
                 int res = cmd.ExecuteNonQuery();
