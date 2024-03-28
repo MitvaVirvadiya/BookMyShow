@@ -11,7 +11,7 @@ namespace BookMyShow
 {
 
 
-    public partial class ManageUsers
+    public partial class Home
     {
 
         /// <summary>
@@ -24,21 +24,30 @@ namespace BookMyShow
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// dgvUser control.
+        /// profileControl control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView dgvUser;
+        protected global::System.Web.UI.WebControls.Image profileControl;
 
         /// <summary>
-        /// dgvUsers control.
+        /// emailTxt control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView dgvUsers;
+        protected global::System.Web.UI.WebControls.Label emailTxt;
+
+        /// <summary>
+        /// DisMovieDtl control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DataList DisMovieDtl;
     }
 }

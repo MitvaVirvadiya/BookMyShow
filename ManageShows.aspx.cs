@@ -62,7 +62,7 @@ namespace BookMyShow
             try
             {
                 fnConnection();
-                string qry = "SELECT M.MovieID, M.MovieName, T.TheatreID, T.TheatreName, T.Location, S.ShowTime, s.Price\r\nFROM tblMovie M\r\n, tblTheatre T, tblShow S WHERE M.MovieID = S.MovieID\r\nAND T.TheatreID = S.TheatreID;\r\n";
+                string qry = "SELECT S.ShowID, M.MovieID, M.MovieName, T.TheatreID, T.TheatreName, T.Location, S.ShowTime, s.Price\r\nFROM tblMovie M\r\n, tblTheatre T, tblShow S WHERE M.MovieID = S.MovieID\r\nAND T.TheatreID = S.TheatreID;\r\n";
                 cmd = new SqlCommand(qry, conn);
                 sda = new SqlDataAdapter(cmd);
                 ds = new DataSet();
@@ -172,33 +172,81 @@ namespace BookMyShow
         protected void dgvShows_SelectedIndexChanged(object sender, EventArgs e)
         {
             GridViewRow rw = dgvShows.SelectedRow;
-            //movieNameTxt.Text = rw.Cells[3].Text;
-            //descriptionTxt.Text = rw.Cells[4].Text;
-            //releaseDateTxt.Text = rw.Cells[5].Text;
-            //durationTxt.Text = rw.Cells[7].Text;
-            //for (int i = 0; i < genreRadioList.Items.Count; i++)
-            //{
-            //    if (genreRadioList.Items[i].Text == rw.Cells[8].Text.Trim())
-            //    {
-            //        genreRadioList.SelectedIndex = i;
-            //    }
-            //}
+            id = Convert.ToInt32(rw.Cells[1].Text);
+            for (int i = 0; i < movieDDL.Items.Count; i++)
+            {
+                if (movieDDL.Items[i].Text == rw.Cells[3].Text)
+                {
+                    movieDDL.SelectedIndex = i;
+                }
+            }
+            for (int i = 0; i < theatreDDL.Items.Count; i++)
+            {
+                if (theatreDDL.Items[i].Text == (rw.Cells[5].Text + " - " + rw.Cells[6].Text))
+                {
+                    theatreDDL.SelectedIndex = i;
+                }
+            }
+            showTimeTxt.Text = rw.Cells[7].Text;
+            priceTxt.Text = rw.Cells[8].Text;
+        }
 
-            //id = Convert.ToInt32(rw.Cells[2].Text);
-            //for (int i = 0; i < languageRadioList.Items.Count; i++)
-            //{
-            //    if (languageRadioList.Items[i].Text == rw.Cells[9].Text.Trim())
-            //    {
-            //        languageRadioList.SelectedIndex = i;
-            //    }
-            //}
-            //for (int i = 0; i < ratingRadioList.Items.Count; i++)
-            //{
-            //    if (ratingRadioList.Items[i].Text == rw.Cells[10].Text.Trim())
-            //    {
-            //        ratingRadioList.SelectedIndex = i;
-            //    }
-            //}
+        protected void editBtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                fnConnection();
+                String qry = "UPDATE tblShow SET MovieID = @MovieID, TheatreID = @TheatreID, ShowTime = @ShowTime, Price = @Price WHERE ShowID = @id";
+                cmd = new SqlCommand(qry, conn);
+                cmd.Parameters.AddWithValue("MovieID", movieDDL.SelectedValue);
+                cmd.Parameters.AddWithValue("TheatreID", theatreDDL.SelectedValue);
+                cmd.Parameters.AddWithValue("ShowTime", showTimeTxt.Text);
+                cmd.Parameters.AddWithValue("Price", priceTxt.Text);
+
+                cmd.Parameters.AddWithValue("id", id);
+                int res = cmd.ExecuteNonQuery();
+                if (res > 0)
+                {
+                    successLB.Text = "Show is updated successfully";
+                }
+                else
+                {
+                    errorLB.Text = "Updation failed";
+                }
+                fnBindGrid();
+            }
+            catch (Exception ex)
+            {
+                errorLB.Text = "Error: " + ex;
+            }
+        }
+
+        protected void dgvShows_RowDeleting(object sender, GridViewDeleteEventArgs e)
+        {
+            GridViewRow rw = dgvShows.Rows[e.RowIndex];
+            int delid = Convert.ToInt32(rw.Cells[1].Text);
+            try
+            {
+                fnConnection();
+                String qry = "DELETE FROM tblShow WHERE ShowID=@delid";
+                cmd = new SqlCommand(qry, conn);
+                cmd.Parameters.AddWithValue("delid", delid);
+                int r = cmd.ExecuteNonQuery();
+                if (r > 0)
+                {
+                    successLB.Text = "Show is deleted successfully";
+                }
+                else
+                {
+                    errorLB.Text = "Deletion failed";
+                    //conn.Close();
+                }
+                fnBindGrid();
+            }
+            catch (Exception ex)
+            {
+                errorLB.Text = "Error: " + ex;
+            }
         }
     }
 }

@@ -1,0 +1,54 @@
+﻿/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling for header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Basic styling for footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Styling for movie grid layout */
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    gap: 20px; /* Spacing between movie cards */
+    padding: 20px;
+}
+
+/* Styling for movie cards */
+.movie-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+    .movie-card img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+
+    .movie-card h2 {
+        margin-top: 10px;
+        font-size: 18px;
+    }
+
+    .movie-card p {
+        font-size: 14px;
+        color: #666;
+    }

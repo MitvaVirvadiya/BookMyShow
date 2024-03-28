@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -39,51 +42,38 @@ namespace BookMyShow
             }
         }
 
+
         protected void registerBtn_Click(object sender, EventArgs e)
         {
-            Response.Write(usernameTxt.Text);
-            Response.Write(emailTxt.Text);
-            Response.Write(passwordTxt.Text);
-            
-            Response.Write(locationDDL.Text);
-        }
-
-        protected System.Void registerBtn_Click(System.Object sender, System.EventArgs e)
-        {
-            
+            String image = "~/assets/" + FileUpload1.FileName;
             try
             {
                 fnConnection();
-                String qry = "INSERT INTO tblTheatre(Username,Email,Password,image,Location) VALUES(@Username,@Email,@Password,@image,@Location)";
+                String qry = "INSERT INTO tblUser(Username,Email,Password,image,Location) VALUES(@Username,@Email,@Password,@image,@Location)";
                 cmd = new SqlCommand(qry, conn);
                 cmd.Parameters.AddWithValue("Username", usernameTxt.Text);
-                cmd.Parameters.AddWithValue("Email", emailTxt.SelectedValue);
-                cmd.Parameters.AddWithValue("passwordTxt", totalSeatsTxt.Text);
-                //cmd.Parameters.AddWithValue("image", totalSeatsTxt.Text);
-                cmd.Parameters.AddWithValue("Location", locationDDL.selected);
-                // hello vandan
-
-
+                cmd.Parameters.AddWithValue("Email", emailTxt.Text);
+                cmd.Parameters.AddWithValue("Password", passwordTxt.Text);
+                cmd.Parameters.AddWithValue("image", image);
+                cmd.Parameters.AddWithValue("Location", locationDDL.SelectedValue);
+        
                 int res = cmd.ExecuteNonQuery();
+                FileUpload1.SaveAs(Server.MapPath(image));
                 if (res > 0)
                 {
-                    successLB.Text = "Theatre is added successfully";
+                    successLB.Text = "Movie is added successfully";
+                    Response.Redirect("~/Login.aspx");
                 }
                 else
                 {
                     errorLB.Text = "Insertion failed";
                 }
                 conn.Close();
-                fnBindGrid();
             }
             catch (Exception ex)
             {
-                errorLB.Text = "Error: "+ ex;
+                errorLB.Text = "Error: " + ex;
             }
         }
-
-        
-      
-
     }
 }
