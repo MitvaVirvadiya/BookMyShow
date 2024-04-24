@@ -15,7 +15,7 @@ Inherits="BookMyShow.Welcome" %>
     />
       <style>
           .error{
-              color: red;
+              color: blue;
           }
       </style>
   </head>
